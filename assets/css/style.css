@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+nav {
+    padding: 10px;
+    grid-area: menu;
+    background: #5E0B15;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    }
+
+#hamburguesa{
+    margin-left: 10em;
+    width: 20px;
+    height: 20px;
+}
+
+navbar{
+    grid-area: barra;
+    padding: 10px;
+    background-color: #90323D;
+    text-align: center;
+    padding-top: 0%;
+    color: aliceblue;
+}
+
+.opciones{
+    display: none;
+}
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    grid-area: contenido;
+    padding: 10px;
+    padding-bottom: 0%;
+    background-color: #D9CAB3;
+    }
+    footer {
+    text-align: center;
+    grid-area: pie-de-pagina;
+    background: #BC8034;
+    color: white;
+    padding: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    }
+
+    div {
+        height: calc(100vh);
+        display: grid;
+        grid-template-rows: 1fr 1fr 10fr 1fr 1fr;
+        grid-template-areas:
+        "menu"
+        "barra"
+        "contenido"
+        "pie-de-pagina";
+        }
+    .card-body{
+        height: 7em;
+        border: 0;
+        justify-content: center;
+    }
+
+.navegar{
+    padding-top: 0.5em;
+    padding-bottom: 0%;
+   background-color: #D9CAB3;
+   grid-area: paginas;
+
+
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    grid-area: paginas;
+}
+
+.card{
+    width: 250px;
+    border-bottom-style: groove;
+    margin-top: 1em;
+}
+
+.dropdown{
+    height: 40px;
+}
+
+@media (min-width: 576px){
+    div {
+        height: calc(100vh);
+        display: grid;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-columns: 10em 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "menu barra barra barra barra"
+        "menu contenido contenido contenido contenido"
+        "menu contenido contenido contenido contenido"
+        "pie-de-pagina contenido contenido contenido contenido";
+   }
+
+   #hamburguesa{
+    display: none;
+   }
+   .navegar{
+    display: flex;
+    height: 60px;
+   }
+
+   .card{
+    margin-left: 5px;
+    margin-right: 5px;
+   }
+
+   main {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    overflow-x: scroll;
+ }
+
+ button{
+    width: 64em;
+ }
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.boton{
+    height: 40px;
+}
+
+}
